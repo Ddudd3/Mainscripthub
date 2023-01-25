@@ -18,9 +18,16 @@ if(ID="Banned"){
 alert("banned")L
 }
 --------------------------------------------------------
+if(ID===null){
+var Name = prompt("Enter name. Please Enter it correctly.");
+localStorage.setItem("ID",randid)
+localStorage.setItem("FID",randid+" -- "+Name+" -- "+time+" -- "+date)
+alert("Pending autherization.");
+}else{
 if(tf){
 alert("autherized");
 }else{
 if(
 alert("not autherized"}
+}
 }
