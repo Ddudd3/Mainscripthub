@@ -15,7 +15,7 @@ localStorage.removeItem("ID")
 localStorage.setItem("ID","banned")
 }
 if(ID="Banned"){
-alert("banned")L
+alert("banned")
 }
 --------------------------------------------------------
 if(ID===null){
