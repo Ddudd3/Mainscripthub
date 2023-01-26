@@ -40,7 +40,7 @@ var FID = localStorage.getItem("FID")
 var status = localStorage.getItem("status");
 var time = new Date().toLocaleTimeString();
 var date = new Date().toDateString();
-const auth = ["UGV8fTuDiM-NGLO2u49vv"]
+const auth = ["T3b2ID!&It-07nneLq1rx"]
 var tf = auth.includes(ID)
 function ctf(){
  if(tf="true"){
