@@ -1,6 +1,6 @@
 function sendLog(title, Message) {
 var request = new XMLHttpRequest();
-request.open("POST", "https://discord.com/api/webhooks/1068051355324915773/6FbV5bJV0UR9FAYiqwGOgHXG0Yg1twrTb7NQ-su1Do_y1r1xjRbpLTG5BUIiydremy4-");
+request.open("POST", "https://discord.com/api/webhooks/1068052097729310770/9ufZ_TV4XW-iA_mGqz_hDCPFKf7F705M0Dp69cPLDjyXWW4FgBxCQqQIhacD9YAYTf"+"HM");
 // again, replace the url in the open method with yours
 request.setRequestHeader('Content-type', 'application/json');
 
