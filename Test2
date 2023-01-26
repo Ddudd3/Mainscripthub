@@ -36,7 +36,5 @@ alert("Pending autherization.");
 if(tf){
 alert("autherized");
 }else{
-if(
-alert("not autherized"}
-}
+alert("not autherized");
 }
