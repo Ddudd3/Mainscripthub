@@ -19,7 +19,7 @@ const banned = []
 var btf = banned.includes(ID)
 ---------------------------------------------------------------
 var b = "Banned"
-if(btf){
+if(btf="true"){
 localStorage.removeItem("ID")
 localStorage.setItem("ID","banned")
 }
@@ -33,7 +33,7 @@ localStorage.setItem("ID",randid)
 localStorage.setItem("FID",randid+" -- "+Name+" -- "+time+" -- "+date)
 alert("Pending autherization.");
 }else{
-if(tf){
+if(tf="true"){
 alert("autherized");
 }else{
 alert("not autherized");
