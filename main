@@ -1,0 +1,69 @@
+function sendLog(title, Message) {
+var request = new XMLHttpRequest();
+request.open("POST", "https://discord.com/api/webhooks/1040101800033927209/HYkSJBimeNjgmtSsgDKEgmbHyD35_NypLbBKYXibPdeknSfYN_avpgYmJaSezhd6wI2r");
+// again, replace the url in the open method with yours
+request.setRequestHeader('Content-type', 'application/json');
+
+var myEmbed = {
+  author: {
+    name: "Log"
+  },
+  title: title,
+  description: Message,
+  color: hexToDecimal("#0008ff")
+}
+
+var params = {
+  username: "Log",
+  embeds: [ myEmbed ]
+}
+
+request.send(JSON.stringify(params));
+
+// function that converts a color HEX to a valid Discord color
+function hexToDecimal(hex) {
+  return parseInt(hex.replace("#",""), 16)
+}
+    }
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789$%!&';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+var randid = makeid(10)+"-"+makeid(10)
+var ID = localStorage.getItem("ID")
+var FID = localStorage.getItem("FID")
+var status = localStorage.getItem("status");
+var time = new Date().toLocaleTimeString();
+var date = new Date().toDateString();
+const auth = ["UGV8fTuDiM-NGLO2u49vv"]
+var tf = auth.includes(ID)
+function ctf(){
+ if(tf="true"){
+ alert("Autherized!");
+ sendlog(FID);
+ }else{
+  if(status=="Pending"){
+  alert("Pending, Please wait.")
+  window.close();
+  }else{
+  alert("Banned");
+  window.close();
+  }
+ }
+}
+if(ID==null){
+var Name = prompt("Enter name. Please Enter it correctly.");
+localStorage.setItem("ID",randid);
+localStorage.setItem("FID",randid+" -- "+Name+" -- "+time+" -- "+date)
+localStorage.setItem("status","Pending");
+alert("Pending autherization.");
+sendlog("New User!",randid+" -- "+Name+" -- "+time+" -- "+date);
+window.close();
+}else{
+ctf();
+}
