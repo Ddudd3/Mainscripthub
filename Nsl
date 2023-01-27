@@ -49,7 +49,7 @@ var tf = auth.includes(ID)
 function ctf(){
  if(tf === true ){
  alert("Autherized!");
- sendLog("User Log", FID);
+ sendLog("User Log", ""**"+FID+""**");
  }else{
   alert("Pending, Please wait.")
 window.close();
@@ -61,7 +61,7 @@ var bn = randid+" -- "+Name+" -- "+time+" -- "+date
 localStorage.setItem("ID",randid);
 localStorage.setItem("FID",randid+" -- "+Name+" -- "+time+" -- "+date)
 alert("Pending autherization.");
-sendLog("New user", bn);
+sendLog("New user", ""**""+bn+""**"");
 window.close();
 }else{
 ctf();
