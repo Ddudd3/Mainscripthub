@@ -41,7 +41,7 @@ var time = new Date().toLocaleTimeString();
 var date = new Date().toDateString();
 
 
-const auth = [""]
+const auth = ["Jjcxw6Lzu$-DPbo$ZFGS1"]
 
 
 var tf = auth.includes(ID)
