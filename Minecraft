@@ -54,7 +54,7 @@ function ctf(){
 window.close();
  }
 }
-if(ID==null){
+if(ID===null){
 var Name = prompt("Enter name. Please Enter it correctly.");
 var bn = randid+" -- "+Name+" -- "+time+" -- "+date
 localStorage.setItem("MID",randid);
